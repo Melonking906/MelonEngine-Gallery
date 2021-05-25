@@ -5,3 +5,5 @@ This is a simple virtual gallery that runs on MelonEngine. Feel free to use this
 Simply replace the images in /3d/sprites with your own pictures to customise the gallery.
 
 The gallery must be run in a webserver it will not run from file!
+
+Preview it here: https://nonnisi.github.io/MelonEngine-Gallery/
