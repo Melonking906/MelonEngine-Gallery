@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Gallery</title>
+		<preference name="DisallowOverscroll" value="true" />
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+				position: fixed;
+				bottom: 0;
+				top: 0;
+				right: 0;
+				left: 0;
+				overflow: hidden;
+			}
+
+			body {
+				font-family: 'Times New Roman', serif;
+				background-color: white;
+			}
+
+			#plot,
+			#plot-canvas,
+			#plot-loading {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+			
+			#plot-console {
+				float: left;
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				padding: 0 0 30px 20px;
+				color: white;
+				font-size: 20px;
+				max-height: 150px;
+				overflow: hidden;
+			}
+
+			#plot-loading {
+				background-color: white;
+				padding-top: 30%;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="plot">
+			<canvas id="plot-canvas"></canvas>
+			<div id="plot-console"></div>
+			<div id="plot-loading">
+				<h1>The gallery is loading!</h1>
+			</div>
+		</div>
+		<script type="module" src="3d/scenes/world.js"></script>
+	</body>
+
+</html>
